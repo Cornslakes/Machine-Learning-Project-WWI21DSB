@@ -1,0 +1,1 @@
+Looking for dataset on kaggle --> looks promising --> becomes shit after more curious inspection. Pictures were 360 pictures of one fruit and not 360 pictures of many fruits!
