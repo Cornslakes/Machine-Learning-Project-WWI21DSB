@@ -1,1 +1,4 @@
-1. Looking for dataset on kaggle --> looks promising --> becomes shit after more curious inspection. Pictures were 360 pictures of one fruit and not 360 pictures of many fruits!
+1. Looking for dataset on kaggle --> looks promising --> becomes shit after more curious inspection. Pictures were 360 degrees pictures of one fruit and not 360 pictures of many fruits.
+
+2. Tensorflow compatibility problems with M1 mac processor --> initial training setup was unsucessfull, error wasn't to be found. Later discovered that Tensorflow doesn't support M1-processor compatibility because the structure is different.
+   Tried work-around but this messes up the formation of the introductionary video --> training on weaker windows pc.
