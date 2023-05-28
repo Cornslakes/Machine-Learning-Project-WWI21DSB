@@ -2,3 +2,8 @@
 
 2. Tensorflow compatibility problems with M1 mac processor --> initial training setup was unsucessfull, error wasn't to be found. Later discovered that Tensorflow doesn't support M1-processor compatibility because the structure is different.
    Tried work-around but this messes up the formation of the introductionary video --> training on weaker windows pc.
+
+3. Labeling of dataset -> small/simple, huge/tedious. Package of python found which does the thing for you. Needs a trained model obviously Probelm: trained model by tensorflow object detection api is not compatible with normal tensorflow operations. Therefore either do 
+   it manually, train a different model thats not pretrained or use an online tool.
+
+4.
