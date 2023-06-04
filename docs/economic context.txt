@@ -1,0 +1,7 @@
+Important for presentation setup!
+
+-> Economic context is not for user purposes due to "hard" setup 
+-> If better developed it can be used at:
+- Avocado plantations (by using e.g. drones to perfectly harvest ready fruits)
+- For supermarkets (maybe cams that automatically sort out bad avocados) --> can be expanded to all kinds of fruits
+- For wholesale markets to firstly sort fruits
