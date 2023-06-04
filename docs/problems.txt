@@ -6,4 +6,4 @@
 3. Labeling of dataset -> small/simple, huge/tedious. Package of python found which does the thing for you. Needs a trained model obviously Probelm: trained model by tensorflow object detection api is not compatible with normal tensorflow operations. Therefore either do 
    it manually, train a different model thats not pretrained or use an online tool.
 
-4.
+4. Compatibility with Mac machines regarding the setup because the api is rather hard to install there
