@@ -1,6 +1,7 @@
 # Machine-Learning-Project-WWI21DSB
 
 Goal of this project is to develop a machine learning application which can be used to classify avocados during a live video-feed. <br>
+
 It should be a prototype that with further development can be used to e.g. assist retailers in sorting out overripe avocados or assist avocado-farms in their picking procedure.<br>
 
 Members of this group are Leonard Jung and Steffen Weiffenbach.
