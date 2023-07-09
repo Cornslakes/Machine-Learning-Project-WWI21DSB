@@ -7,9 +7,10 @@ from object_detection.utils import visualization_utils as viz_utils
 from object_detection.builders import model_builder
 from object_detection.utils import config_util
 
+# If you want to try the "new" bad model xd just change the dir "export - altes model" to "export - neues model"
 paths = {
     'PIPELINE_CONFIG':os.path.join('model','pipeline.config'),
-    'CHECKPOINT_PATH': os.path.join('model','export','checkpoint', 'ckpt-0'), 
+    'CHECKPOINT_PATH': os.path.join('model','export - altes model','checkpoint', 'ckpt-0'), 
     'LABELMAP_PATH': os.path.join('model','label_map.pbtxt'), 
 }
 
@@ -47,7 +48,7 @@ while cap.isOpened():
                   for key, value in detections.items()}
     detections['num_detections'] = num_detections
 
-    # detection_classes should be ints.
+    # Detection_classes should be ints.
     detections['detection_classes'] = detections['detection_classes'].astype(np.int64)
 
     label_id_offset = 1
