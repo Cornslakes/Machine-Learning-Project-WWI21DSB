@@ -1,10 +1,17 @@
 # Machine-Learning-Project-WWI21DSB
 
+Goal of this project is to develop a machine learning application which can be used to classify avocados during a live video-feed.
+It should be a prototype that with further development can be used to e.g. assist retailers in sorting out overripe avocados or assist avocado-farms in their picking procedure.
+
+Members of this group are Leonard Jung and Steffen Weiffenbach.
+
+# Repository overview
+
 app contains the Avometer application with setup configuration
 
 docs contains documentation of the project
 
-training contains the notebook for training of the model
+training contains the notebook for training of the model, which was perfomed on Google Collab
 
 # Setup details
 
@@ -17,7 +24,7 @@ training contains the notebook for training of the model
    `pip install -r requirements.txt`<br>
 3. Allect a new ipykernel to install more needed dependencies by running <br>  
    `python -m ipykernel install --user --name="name"` <br>
-4. Run through the requirements.ipynb, if the model_builder_test print an "OK"-message the setup was successfull<br>
-5. run avometer.py through your console<br>  
+4. Run through the requirements.ipynb, if the model_builder_test prints an "OK"-message the setup was successfull<br>
+5. Run avometer.py through your console<br>  
    `python avometer.py`<br>
-6. enjoy classifying your avocados :D
+6. Enjoy classifying your avocados :D
