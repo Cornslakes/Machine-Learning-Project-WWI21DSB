@@ -1,7 +1,7 @@
 # Machine-Learning-Project-WWI21DSB
 
 Goal of this project is to develop a machine learning application which can be used to classify avocados during a live video-feed. <br>
-It should be a prototype that with further development can be used to e.g. assist retailers in sorting out overripe avocados or assist avocado-farms in their picking procedure.
+It should be a prototype that with further development can be used to e.g. assist retailers in sorting out overripe avocados or assist avocado-farms in their picking procedure.<br>
 
 Members of this group are Leonard Jung and Steffen Weiffenbach.
 
@@ -11,14 +11,14 @@ app contains the Avometer application with setup configuration
 
 docs contains documentation of the project
 
-training contains the notebook for training of the model, which was perfomed on Google Collab
+training contains the notebook for training of the model which was perfomed on Google Collab
 
 # Setup details
 
 1. To dodge issues with your current tensorflow version on your machine it's highly recommended to create a python virtual environment on your machine<br>
    -> 1.1 `python -m venv "name"`<br>
    -> 1.2 `.\"name"\Scripts\activate`<br>
-   -> 1.3 `python -m pip install --upgrade pip`<br><br>
+   -> 1.3 `python -m pip install --upgrade pip`<br>
 
 2. To start the setup install all needed dependencies by running <br>  
    `pip install -r requirements.txt`<br>
