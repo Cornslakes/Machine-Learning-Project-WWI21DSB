@@ -6,7 +6,7 @@ docs contains documentation of the project
 
 training contains the notebook for training of the model
 
-# ----------Setup details----------
+# Setup details
 
 1. To dodge issues with your current tensorflow version on your machine it's highly recommended to create a python virtual environment on your machine<br>
    -> 1.1 `python -m venv "name"`<br>
