@@ -1,0 +1,16 @@
+item { 
+	name:'unripe'
+	id:1
+}
+item { 
+	name:'preripe'
+	id:2
+}
+item { 
+	name:'ripe'
+	id:3
+}
+item { 
+	name:'overripe'
+	id:4
+}

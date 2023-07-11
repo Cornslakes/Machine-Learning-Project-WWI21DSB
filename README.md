@@ -16,6 +16,8 @@ training contains the notebook for training of the model which was perfomed on G
 
 # Setup details
 
+Please bare in mind that setup is only tested for Windows based machines. <br>
+
 1. To dodge issues with your current tensorflow version on your machine it's highly recommended to create a python virtual environment on your machine<br>
    -> 1.1 `python -m venv "name"`<br>
    -> 1.2 `.\"name"\Scripts\activate`<br>
@@ -23,9 +25,14 @@ training contains the notebook for training of the model which was perfomed on G
 
 2. To start the setup install all needed dependencies by running <br>  
    `pip install -r requirements.txt`<br>
+
 3. Allect a new ipykernel to install more needed dependencies by running <br>  
    `python -m ipykernel install --user --name="name"` <br>
+
 4. Run through the requirements.ipynb, if the model_builder_test prints an "OK"-message the setup was successfull<br>
-5. Run avometer.py through your console<br>  
-   `python avometer.py`<br>
+
+5. Run avometer.py <b>through your console</b>. A start through VS-Code e.g. won't work sufficiently. The app can be closed by pressing 'q' on your keyboard<br>  
+   `python avometer_simplenet.py`<br>
+   `python avometer_complexnet.py`<br>
+
 6. Enjoy classifying your avocados :D

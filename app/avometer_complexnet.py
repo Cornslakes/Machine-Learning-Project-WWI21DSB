@@ -7,21 +7,21 @@ from object_detection.utils import visualization_utils as viz_utils
 from object_detection.builders import model_builder
 from object_detection.utils import config_util
 
-# If you want to try the "new" bad model xd just change the dir "export - altes model" to "export - neues model"
+# Path definitions
 paths = {
-    'PIPELINE_CONFIG':os.path.join('model','pipeline.config'),
-    'CHECKPOINT_PATH': os.path.join('model','export - altes model','checkpoint', 'ckpt-0'), 
-    'LABELMAP_PATH': os.path.join('model','label_map.pbtxt'), 
+    'pipeline':os.path.join('model', 'export_new_model','pipeline.config'),
+    'checkpoint': os.path.join('model','export_new_model','checkpoint', 'ckpt-0'), 
+    'labelmap': os.path.join('model', 'export_new_model','label_map.pbtxt'), 
 }
 
 # Load pipeline config and build a detection model
-configs = config_util.get_configs_from_pipeline_file(paths['PIPELINE_CONFIG'])
+configs = config_util.get_configs_from_pipeline_file(paths['pipeline'])
 detection_model = model_builder.build(model_config=configs['model'], is_training=False)
 
 # Restore checkpoint
 ckpt = tf.compat.v2.train.Checkpoint(model=detection_model)
-ckpt.restore(paths['CHECKPOINT_PATH']).expect_partial()
-category_index = label_map_util.create_category_index_from_labelmap(paths['LABELMAP_PATH'])
+ckpt.restore(paths['checkpoint']).expect_partial()
+category_index = label_map_util.create_category_index_from_labelmap(paths['labelmap'])
 
 # Passes images from camera to model and retrieves coordinates
 @tf.function
@@ -62,10 +62,10 @@ while cap.isOpened():
                 category_index,
                 use_normalized_coordinates=True,
                 max_boxes_to_draw=5,
-                min_score_thresh=.8,
+                min_score_thresh=.7,
                 agnostic_mode=False)
 
-    cv2.imshow('Avometer',  cv2.resize(image_np_with_detections, (800, 600)))
+    cv2.imshow('Avometer, exit by pressing "q"',  cv2.resize(image_np_with_detections, (800, 600)))
     
     if cv2.waitKey(10) & 0xFF == ord('q'):
         cap.release()
